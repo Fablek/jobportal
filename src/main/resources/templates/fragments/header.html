@@ -1,16 +1,37 @@
 <header th:fragment="header">
-    <div>
-        <nav>
-            <a href="/">Start</a>
-            <a href="/">Oferty pracy</a>
-            <a href="/">Dla firm</a>
-            <a href="/">Dla kandydatów</a>
-            <a href="/">Cennik</a>
-            <a href="/">Pomoc i wsparcie</a>
-        </nav>
+    <div class="bg-mainGray">
+        <div class="max-w-1320 mx-auto flex justify-between">
+            <nav class="flex gap-x-6">
+                <a class="py-3.5" href="/">Start</a>
+                <a class="py-3.5" href="/">Oferty pracy</a>
+                <a class="py-3.5" href="/">Dla firm</a>
+                <a class="py-3.5" href="/">Dla kandydatów</a>
+                <a class="py-3.5" href="/">Cennik</a>
+                <a class="py-3.5" href="/">Pomoc i wsparcie</a>
+            </nav>
 
-        <div>
-            <a href="#">+1-202-555-0178</a>
+            <div class="flex justify-between gap-x-6">
+                <a class="py-3.5" href="#">+1-202-555-0178</a>
+                <a class="py-3.5" href="#">English</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-1320 mx-auto flex justify-between py-5">
+        <div class="flex gap-x-8 items-center">
+            <span>JobPortal</span>
+            <div class="border border-borderColor py-2.5 px-6 rounded-md flex">
+                <div class="pr-5">
+                    <select>
+                        <option>India</option>
+                    </select>
+                </div>
+                <input class="pl-5 border-l border-borderColor" type="text" placeholder="Nazwa stanowiska, słowo kluczowe, firma">
+            </div>
+        </div>
+        <div class="flex gap-3 items-center">
+            <a href="#">Zaloguj się</a>
+            <a href="#">Dodaj ofertę pracy</a>
         </div>
     </div>
 </header>
