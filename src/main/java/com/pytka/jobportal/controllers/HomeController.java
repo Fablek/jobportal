@@ -9,7 +9,7 @@ public class HomeController {
 
     @GetMapping("/")
     public String home(Model model) {
-        model.addAttribute("message", "Witaj na stronie głównej!");
+        model.addAttribute("pageTitle", "Strona Główna - Job Portal");
         return "home";
     }
 }

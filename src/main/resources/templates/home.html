@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Portal</title>
+    <title th:text="${pageTitle}">Job Portal</title>
 </head>
+
 <body>
-<h1 th:text="${message}"></h1>
+    <header th:replace="fragments/header :: header"></header>
+
+    <div>
+        <h1>Witaj na stronie głównej!</h1>
+        <p>Treść strony głównej...</p>
+    </div>
+
+    <footer th:replace="fragments/footer :: footer"></footer>
 </body>
 </html>
